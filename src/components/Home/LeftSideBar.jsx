@@ -5,7 +5,7 @@ import ActiveLink from "../ActiveLink";
 const LeftSideBar = () => {
   const [catagories, setcatagories] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/catagories")
+    fetch("https://my-news-server-hasanujjamanjibon.vercel.app/catagories")
       .then((res) => res.json())
       .then((catagories) => setcatagories(catagories))
       .catch((error) => console.log(error));

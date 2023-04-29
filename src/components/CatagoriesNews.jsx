@@ -5,11 +5,10 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const CatagoriesNews = () => {
-  
   const catergoryNews = useLoaderData();
   const [allNews, setAllNews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/catagories/0")
+    fetch("https://my-news-server-hasanujjamanjibon.vercel.app/news")
       .then((res) => res.json())
       .then((data) => setAllNews(data))
       .catch((error) => console.error(error));

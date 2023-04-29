@@ -11,7 +11,7 @@ const News = () => {
   const [relatedNews, setRelatedNews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/news")
+    fetch("https://my-news-server-hasanujjamanjibon.vercel.app/news")
       .then((res) => res.json())
       .then((data) => {
         const categoryMatched = data?.filter(
