@@ -7,7 +7,7 @@ import Spinner from "../Spinner";
 const PrivateRoute = ({ children }) => {
   const location = useLocation();
   console.log("private Route", location);
-  const { user, loading, setLoading } = useContext(AuthContext);
+  const { user, loading } = useContext(AuthContext);
   if (loading) {
     return <Spinner></Spinner>;
   }

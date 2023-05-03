@@ -19,17 +19,17 @@ const RegsiterForm = () => {
       .then((result) => {
         const newUser = result.user;
         console.log(newUser);
-        updateProfile(newUser, {
-          displayName: name,
-          photoURL: url,
-        })
-          .then((result) => {
-            alert("successfully user created");
-          })
-          .catch((error) => {
-            console.error(error.code);
-            console.error(error.message);
-          });
+        // updateProfile(newUser, {
+        //   displayName: name,
+        //   photoURL: url,
+        // })
+        //   .then((result) => {
+        //     alert("successfully user created");
+        //   })
+        //   .catch((error) => {
+        //     console.error(error.code);
+        //     console.error(error.message);
+        //   });
         // console.log(newUser);
       })
       .catch((error) => {
